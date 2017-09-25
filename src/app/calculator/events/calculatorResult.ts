@@ -1,8 +1,7 @@
-import {value} from "../constanta";
-
 export function calculatorResult () {
-    let result: number = +document.getElementsByClassName('btn--result')[0].innerHTML,
-        resultObj = document.getElementsByClassName('btn--result')[0],
+    const  resultObj = document.getElementsByClassName('btn--result')[0];
+
+    let result: number = +resultObj.innerHTML,
         value:string;
 
     result *=  result;

@@ -1,3 +1,3 @@
-export function addEvent(item:any, colbeck:any):void {
-    item.addEventListener('click', colbeck);
+export function addEvent(item:any, collbeck:any):void {
+    item.addEventListener('click', collbeck);
 }

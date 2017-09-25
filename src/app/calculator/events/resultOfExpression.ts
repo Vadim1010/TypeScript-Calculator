@@ -1,8 +1,9 @@
-import {filterResult} from './filterResult'
+import {filterResult} from './filterResult';
 
 export function resultOfExpression (){
-    let result:string | number = document.getElementsByClassName('btn--result')[0].innerHTML,
-        resultObj = document.getElementsByClassName('btn--result')[0],
+    const  resultObj = document.getElementsByClassName('btn--result')[0];
+
+    let result:string | number = resultObj.innerHTML,
         resultNumber:any;
 
     result = filterResult(result);
@@ -13,8 +14,8 @@ export function resultOfExpression (){
 
     resultObj.innerHTML = resultNumber;
 
-    if (resultNumber === 'Infinity') {
+    if (resultNumber === Infinity) {
         alert('Error');
-        result = 0;
+        resultObj.innerHTML = '0';
     }
 }

@@ -1,11 +1,11 @@
-import {specialCharacterCheck} from './specialCharacterCheck'
+import {specialCharacterCheck} from './specialCharacterCheck';
 
 export function changeResult(event:any):void {
-    let result:string | number = document.getElementsByClassName('btn--result')[0].innerHTML,
-        resultObj = document.getElementsByClassName('btn--result')[0],
+    const  resultObj = document.getElementsByClassName('btn--result')[0];
+
+    let result:string | number = resultObj.innerHTML,
         symbol:string,
         value:string;
-console.log(111);
 
     if (typeof(event) === 'object' ) {
         value = event.target.innerHTML;
@@ -21,16 +21,13 @@ console.log(111);
             symbol = specialCharacterCheck(value, result);
             break;
         default:
-            let firstSymbol = result[0],
-                lengthResult = result.length;
-            if (firstSymbol === '0' && lengthResult === 1) {
-                symbol = value;
-            }  else if (result === 'result') {
-                symbol = value;
-            } else {
-                symbol = result + value;
+            if (result[0] === '0' &&  result.length === 1 || result === 'result') {symbol = value} else {
+                symbol = result + value
             }
+
+            value = typeof(event) === 'object'  ? event.target.innerHTML : event;
     }
+
     resultObj.innerHTML = symbol;
 }
 

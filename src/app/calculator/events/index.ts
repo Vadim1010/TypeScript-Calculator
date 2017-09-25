@@ -23,6 +23,4 @@ export function createEvent ():void {
                 addEvent(items[i], changeResult);
         }
     }
-
-
 }

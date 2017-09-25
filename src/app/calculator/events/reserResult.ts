@@ -1,5 +1,5 @@
 export function resetResult ():void {
-    let result = document.getElementsByClassName('btn--result')[0];
+    const  resultObj = document.getElementsByClassName('btn--result')[0];
 
-    result.innerHTML = '0';
+    resultObj.innerHTML = '0';
 }

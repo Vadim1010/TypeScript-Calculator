@@ -1,7 +1,7 @@
-const lastSymbols: string[] = ['/', '*', '-', '+', '.'];
+import {specialSymbols} from '../constanta';
 
 export function filterResult (value: string):string {
-    for (let key of lastSymbols) {
+    for (let key of specialSymbols) {
         let lastSymbol:string = value.substr(-1);
 
         if(key === lastSymbol) {

@@ -1,12 +1,11 @@
 import {value} from './constanta'
 
 export function  createCalculator():void {
-    let calculator = document.createElement('div'),
-        i ;
+    const calculator = document.createElement('div');
 
     calculator.classList.add('calculator');
 
-    for ( i = 0; i < value.length ; i++) {
+    for (let i = 0; i < value.length ; i++) {
         let calculatorItem = document.createElement('div');
 
         calculatorItem.classList.add('btn');
