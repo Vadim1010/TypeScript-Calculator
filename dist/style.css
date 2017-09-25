@@ -1,0 +1,45 @@
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto 0;
+    border: 1px solid #000;
+    width: 350px;
+    padding: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.btn {
+    width: 24.4%;
+    margin: 1px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    cursor: pointer;
+    padding: 5px;
+    min-width: 60px;
+}
+
+.btn--result {
+    width: 49.4%;
+    background: grey;
+    text-align: right;
+    overflow: hidden;
+    overflow-x: auto;
+    
+}
+
+.btn--result::-webkit-scrollbar-button{
+    background: red;
+}
+
+.btn--red {
+    background: red;
+}
+
+.btn--green {
+    background: green;
+}
+.btn--grey {
+     background: grey;
+ }
+

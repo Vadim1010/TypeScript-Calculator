@@ -6,3 +6,7 @@ npm install
 
 webpack
 
+
+## Main files
+
+dist\
