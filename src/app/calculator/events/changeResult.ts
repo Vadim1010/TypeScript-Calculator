@@ -3,9 +3,9 @@ import {specialCharacterCheck} from './specialCharacterCheck'
 export function changeResult(event:any):void {
     let result:string | number = document.getElementsByClassName('btn--result')[0].innerHTML,
         resultObj = document.getElementsByClassName('btn--result')[0],
-        symbol,
-        value;
-
+        symbol:string,
+        value:string;
+console.log(111);
 
     if (typeof(event) === 'object' ) {
         value = event.target.innerHTML;

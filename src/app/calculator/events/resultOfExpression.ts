@@ -1,7 +1,11 @@
+import {filterResult} from './filterResult'
+
 export function resultOfExpression (){
     let result:string | number = document.getElementsByClassName('btn--result')[0].innerHTML,
         resultObj = document.getElementsByClassName('btn--result')[0],
         resultNumber:any;
+
+    result = filterResult(result);
 
     resultNumber = eval(result);
 
