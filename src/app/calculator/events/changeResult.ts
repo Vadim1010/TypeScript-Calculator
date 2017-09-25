@@ -2,7 +2,7 @@ import {specialCharacterCheck} from './specialCharacterCheck'
 
 export function changeResult(event:any):void {
     let result:string | number = document.getElementsByClassName('btn--result')[0].innerHTML,
-        resultObj:object = document.getElementsByClassName('btn--result')[0],
+        resultObj = document.getElementsByClassName('btn--result')[0],
         symbol,
         value;
 
@@ -31,7 +31,6 @@ export function changeResult(event:any):void {
                 symbol = result + value;
             }
     }
-
-    resultObj = symbol;
+    resultObj.innerHTML = symbol;
 }
 
